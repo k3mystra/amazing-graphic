@@ -190,22 +190,22 @@ Model loadObjFile(const std::string& path) {
         }
 
         //DEBUG
-        std::cout << "Shape '" << shape.name << "' material_ids: ";
-        for (int id : shape.mesh.material_ids)
-            std::cout << id << " ";
-        std::cout << "\n";
+        // std::cout << "Shape '" << shape.name << "' material_ids: ";
+        // for (int id : shape.mesh.material_ids)
+        //     std::cout << id << " ";
+        // std::cout << "\n";
 
-        for (int i = 0; i < materials.size(); i++) {
-            std::cout << "Material " << i << ": " << materials[i].name 
-                      << " diffuse(" << materials[i].diffuse[0] << "," 
-                      << materials[i].diffuse[1] << "," 
-                      << materials[i].diffuse[2] << ")"
-                      << " texture: " << materials[i].diffuse_texname << "\n";
-        }
+        // for (int i = 0; i < materials.size(); i++) {
+        //     std::cout << "Material " << i << ": " << materials[i].name 
+        //               << " diffuse(" << materials[i].diffuse[0] << "," 
+        //               << materials[i].diffuse[1] << "," 
+        //               << materials[i].diffuse[2] << ")"
+        //               << " texture: " << materials[i].diffuse_texname << "\n";
+        // }
 
-        std::cout << "  Shape '" << shape.name << "': "
-                  << rawVertices.size() / 3 << " vertices, "
-                  << faceIndices.size() / 3 << " triangles\n";
+        // std::cout << "  Shape '" << shape.name << "': "
+        //           << rawVertices.size() / 3 << " vertices, "
+        //           << faceIndices.size() / 3 << " triangles\n";
 
         model.meshes.push_back(mesh);
     }
